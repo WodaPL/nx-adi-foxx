@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "adi-foxx": "apps/adi-foxx",
+    "adi-foxx-e2e": "apps/adi-foxx-e2e"
+  }
+}
