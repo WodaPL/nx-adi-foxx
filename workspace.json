@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "adi-foxx": "apps/adi-foxx",
-    "adi-foxx-e2e": "apps/adi-foxx-e2e"
+    "adi-foxx-e2e": "apps/adi-foxx-e2e",
+    "adi-foxx-ui-core": "libs/adi-foxx/ui/core",
+    "core-ui-layout": "libs/core/ui/layout"
   }
 }

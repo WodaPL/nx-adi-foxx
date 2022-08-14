@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@adi-foxx/adi-foxx/ui/core": ["libs/adi-foxx/ui/core/src/index.ts"],
+      "@adi-foxx/core/ui/layout": ["libs/core/ui/layout/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
