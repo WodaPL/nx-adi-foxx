@@ -5,6 +5,9 @@
     "adi-foxx": "apps/adi-foxx",
     "adi-foxx-e2e": "apps/adi-foxx-e2e",
     "adi-foxx-ui-core": "libs/adi-foxx/ui/core",
+    "core-helpers": "libs/core/helpers",
+    "core-models": "libs/core/models",
+    "core-ui-assets": "libs/core/ui/assets",
     "core-ui-layout": "libs/core/ui/layout"
   }
 }

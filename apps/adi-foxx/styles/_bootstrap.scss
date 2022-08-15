@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// Override bootstrap variables
+$font-family-sans-serif: 'Inter', sans-serif;
+$body-font-size: 1rem;
+$body-font-weight: 400;
+$body-line-height: 1.5;
+$body-color: #212529;
+$body-bg: #fff;
+
+// Import bootstrap
+@import 'bootstrap/scss/bootstrap';

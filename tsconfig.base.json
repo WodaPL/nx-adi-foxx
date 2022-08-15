@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@adi-foxx/adi-foxx/ui/core": ["libs/adi-foxx/ui/core/src/index.ts"],
+      "@adi-foxx/core/helpers": ["libs/core/helpers/src/index.ts"],
+      "@adi-foxx/core/models": ["libs/core/models/src/index.ts"],
+      "@adi-foxx/core/ui/assets": ["libs/core/ui/assets/src/index.ts"],
       "@adi-foxx/core/ui/layout": ["libs/core/ui/layout/src/index.ts"]
     }
   },

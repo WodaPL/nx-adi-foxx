@@ -4,7 +4,6 @@ import dynamic from 'next/dynamic';
 import { Provider, createClient } from 'urql';
 
 import '../styles/styles.scss';
-import 'bootstrap/dist/css/bootstrap.css';
 
 const apiClient = createClient({ url: process.env.NEXT_PUBLIC_BACKEND_API });
 const productionMode = process.env.NEXT_PUBLIC_BACKEND_PRODUCTION === 'true';

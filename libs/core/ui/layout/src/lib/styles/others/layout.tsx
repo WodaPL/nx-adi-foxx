@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const LayoutContainerStyled = styled.div`
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+
+  min-height: 100vh;
 `;
 
 export const MainContainerStyled = styled.main`
