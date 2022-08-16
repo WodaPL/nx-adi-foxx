@@ -19,7 +19,8 @@
       "@adi-foxx/core/helpers": ["libs/core/helpers/src/index.ts"],
       "@adi-foxx/core/models": ["libs/core/models/src/index.ts"],
       "@adi-foxx/core/ui/assets": ["libs/core/ui/assets/src/index.ts"],
-      "@adi-foxx/core/ui/layout": ["libs/core/ui/layout/src/index.ts"]
+      "@adi-foxx/core/ui/layout": ["libs/core/ui/layout/src/index.ts"],
+      "@adi-foxx/core/ui/sections": ["libs/core/ui/sections/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
