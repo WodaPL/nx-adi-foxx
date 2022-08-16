@@ -7,7 +7,7 @@ import { LogoStyled } from '../styles/components/common';
 
 export const FooterCopyright = ({ className }: { className?: string }) => {
   const currentYear = new Date().getFullYear();
-  const textFirstLine = `${currentYear} © Adi Foxx / Alpha Foxx`;
+  const textFirstLine = `${currentYear} © Adi Foxx`;
   const textSecondLine = `Wszelkie prawa zastrzeżone`;
 
   const route: Route = {
