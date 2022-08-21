@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 import { IconStyled } from '../styles/components/common';
 
-import socialIconFb from '../../../../../ui/assets/src/lib/images/social/facebook.png';
-import socialIconIg from '../../../../../ui/assets/src/lib/images/social/instagram.png';
+const facebookIconUrl = 'images/social-icons/facebook.png';
+const instagramIconUrl = 'images/social-icons/instagram.png';
 
 export const NavbarSocial = ({ className }: { className?: string }) => {
   const routes: Route[] = [
@@ -12,20 +12,20 @@ export const NavbarSocial = ({ className }: { className?: string }) => {
       id: 'facebook',
       label: 'Facebook',
       url: 'https://www.facebook.com/chris.lord.adi',
-      img: socialIconFb,
+      imageUrl: facebookIconUrl,
     },
     {
       id: 'instagram',
       label: 'Instagram',
       url: 'https://www.instagram.com/ardijoe/',
-      img: socialIconIg,
+      imageUrl: instagramIconUrl,
     },
   ];
 
   const routesElements = routes.map((route) => (
     <Link href={route.url} key={route.id}>
       <a>
-        <IconStyled src={route.img?.src} alt={`${route.label} icon`} />
+        <IconStyled src={route.imageUrl} alt={`${route.label} icon`} />
       </a>
     </Link>
   ));

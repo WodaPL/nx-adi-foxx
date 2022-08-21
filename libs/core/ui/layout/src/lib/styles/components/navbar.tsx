@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { heights } from '../variables';
 
 export const NavbarStyled = styled.nav`
-  position: relative;
+  position: ${({ aboveContent }: { aboveContent: boolean }) =>
+    aboveContent ? 'absolute' : 'relative'};
+  z-index: 1000;
 
   width: 100%;
 `;

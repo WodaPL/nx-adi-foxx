@@ -1,7 +1,7 @@
 import { FooterCreatedByStyled } from '../styles/components/footer-created-by';
 
-import alphaFoxxLogo from '../../../../../ui/assets/src/lib/images/logos/alpha-foxx.png';
-import flyingFoxxLogo from '../../../../../ui/assets/src/lib/images/logos/flying-foxx.png';
+const alphaFoxxLogoUrl = 'images/project-logos/alpha-foxx-horizontal.png';
+const flyingFoxxLogoUrl = 'images/project-logos/flying-foxx-horizontal.png';
 
 import Link from 'next/link';
 import { IconStyled } from '../styles/components/common';
@@ -15,13 +15,13 @@ export const FooterCreatedBy = ({ className }: { className?: string }) => {
       id: 'alpha-foxx',
       label: 'Alpha Foxx',
       url: 'http://alpha-foxx.com/',
-      img: alphaFoxxLogo,
+      imageUrl: alphaFoxxLogoUrl,
     },
     {
       id: 'flying-foxx',
       label: 'Flying Foxx',
       url: 'http://flying-foxx.com/',
-      img: flyingFoxxLogo,
+      imageUrl: flyingFoxxLogoUrl,
     },
   ];
 
@@ -30,7 +30,7 @@ export const FooterCreatedBy = ({ className }: { className?: string }) => {
       <a>
         <IconStyled
           dark={true}
-          src={route.img?.src}
+          src={route.imageUrl}
           alt={`${route.label} icon`}
         />
       </a>

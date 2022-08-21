@@ -1,7 +1,8 @@
 import { Route } from '@adi-foxx/core/models';
 import { FooterCopyrightStyled } from '../styles/components/footer-copyright';
 
-import adiFoxxLogo from '../../../../../ui/assets/src/lib/images/logos/adi-foxx.png';
+const adiFoxxLogoUrl = 'images/project-logos/adi-foxx-horizontal.png';
+
 import Link from 'next/link';
 import { LogoStyled } from '../styles/components/common';
 
@@ -14,7 +15,7 @@ export const FooterCopyright = ({ className }: { className?: string }) => {
     id: 'adi-foxx',
     label: 'Adi Foxx',
     url: '/',
-    img: adiFoxxLogo,
+    imageUrl: adiFoxxLogoUrl,
   };
 
   return (
@@ -23,7 +24,7 @@ export const FooterCopyright = ({ className }: { className?: string }) => {
         <a>
           <LogoStyled
             dark={true}
-            src={route.img?.src}
+            src={route.imageUrl}
             alt={`${route.label} icon`}
           />
         </a>

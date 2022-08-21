@@ -17,18 +17,23 @@ import NavbarRoutes from './navbar-routes';
 import NavbarSocial from './navbar-social';
 import NavbarLogo from './navbar-logo';
 
-export const Navbar = ({ className }: { className?: string }) => {
+export const Navbar = ({
+  className,
+  aboveContent = false,
+}: {
+  className?: string;
+  aboveContent?: boolean;
+}) => {
+  const [viewportExceeded, setViewportExceeded] = useState(false);
   const contextContainer = useRef(null);
-  const [viewportScrolled, setViewportScrolled] = useState(false);
+  let actualHeightPx = 0;
 
   const onScroll = () => {
-    setViewportScrolled(
-      window.pageYOffset >= remToPx(heights.navbarDesktop) ? true : false
-    );
+    setViewportExceeded(window.pageYOffset >= actualHeightPx);
   };
 
   useEffect(() => {
-    if (!viewportScrolled) {
+    if (!viewportExceeded) {
       if (contextContainer.current)
         gsap.to(contextContainer.current, {
           background: 'rgba(180, 180, 180, 0)',
@@ -43,9 +48,10 @@ export const Navbar = ({ className }: { className?: string }) => {
           duration: 0.75,
         });
     }
-  }, [viewportScrolled]);
+  }, [viewportExceeded]);
 
   useEffect(() => {
+    actualHeightPx = remToPx(heights.navbarDesktop);
     onScroll();
 
     window.addEventListener('scroll', onScroll);
@@ -56,7 +62,7 @@ export const Navbar = ({ className }: { className?: string }) => {
   }, []);
 
   return (
-    <NavbarStyled>
+    <NavbarStyled aboveContent={aboveContent}>
       <GapContainerStyled className={className}></GapContainerStyled>
       <ContextContainerStyled ref={contextContainer} className={className}>
         <LogoContainerStyled>

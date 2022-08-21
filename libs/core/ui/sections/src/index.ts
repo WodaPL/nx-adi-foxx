@@ -1,1 +1,1 @@
-export * from './lib/core-ui-sections';
+export * from './lib/components/showcase-gallery/showcase-gallery';

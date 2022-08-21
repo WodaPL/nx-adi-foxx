@@ -8,9 +8,11 @@ import {
   ProjectListStyled,
 } from '../styles/components/footer-projects';
 
-import logoFoxxGotuje from '../../../../../ui/assets/src/lib/images/logos/foxx-gotuje.png';
-import logoAlkoholove101 from '../../../../../ui/assets/src/lib/images/logos/alkoholove-101.png';
-import logoTheFoxxesMusic from '../../../../../ui/assets/src/lib/images/logos/the-foxxes-music.png';
+const foxxGotujeLogoUrl = 'images/project-logos/foxx-gotuje-horizontal.png';
+const alkoholove101LogoUrl =
+  'images/project-logos/alkoholove-101-horizontal.png';
+const theFoxxesMusicLogoUrl =
+  'images/project-logos/the-foxxes-music-horizontal.png';
 
 export const FooterProjects = ({ className }: { className?: string }) => {
   const routes: Route[] = [
@@ -18,19 +20,19 @@ export const FooterProjects = ({ className }: { className?: string }) => {
       id: 'foxx-gotuje',
       label: 'Foxx Gotuje',
       url: 'https://www.foxxgotuje.pl',
-      img: logoFoxxGotuje,
+      imageUrl: foxxGotujeLogoUrl,
     },
     {
       id: 'alkoholove-101',
       label: 'Alkoholove 101',
       url: 'https://www.alkoholove101.pl',
-      img: logoAlkoholove101,
+      imageUrl: alkoholove101LogoUrl,
     },
     {
       id: 'the-foxxes-music',
       label: 'The Foxxes Music',
       url: 'https://www.thefoxxesmusic.com',
-      img: logoTheFoxxesMusic,
+      imageUrl: theFoxxesMusicLogoUrl,
     },
   ];
 
@@ -39,7 +41,7 @@ export const FooterProjects = ({ className }: { className?: string }) => {
       <a>
         <IconStyled
           dark={true}
-          src={route.img?.src}
+          src={route.imageUrl}
           alt={`${route.label} icon`}
         />
       </a>

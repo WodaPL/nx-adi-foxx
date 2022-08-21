@@ -4,12 +4,14 @@ import {
   MainContainerStyled,
   Navbar,
 } from '@adi-foxx/core/ui/layout';
+import { ShowcaseGallery } from '@adi-foxx/core/ui/sections';
 
 export function Index() {
   return (
     <>
       <LayoutContainerStyled>
-        <Navbar className="p-standard" />
+        <Navbar className="p-standard" aboveContent={true} />
+        <ShowcaseGallery />
         <MainContainerStyled className="p-standard">
           <div>
             <div>
