@@ -16,10 +16,10 @@ export function Index() {
       <LayoutContainerStyled>
         <Navbar className="p-standard" aboveContent={true} />
         <ShowcaseGallery />
+        <ShowcasePointsTrapezoid id="projekty" />
         <ShowcasePointsTrapezoid />
         <ShowcasePointsTrapezoid />
-        <ShowcasePointsTrapezoid />
-        <ContactForm />
+        <ContactForm id="kontakt" />
         {/* <MainContainerStyled className="p-standard">
           <div>
             <div>
