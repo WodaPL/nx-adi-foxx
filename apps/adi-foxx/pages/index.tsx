@@ -4,7 +4,11 @@ import {
   MainContainerStyled,
   Navbar,
 } from '@adi-foxx/core/ui/layout';
-import { ShowcaseGallery } from '@adi-foxx/core/ui/sections';
+import {
+  ShowcaseGallery,
+  ShowcasePointsTrapezoid,
+  ContactForm,
+} from '@adi-foxx/core/ui/sections';
 
 export function Index() {
   return (
@@ -12,7 +16,11 @@ export function Index() {
       <LayoutContainerStyled>
         <Navbar className="p-standard" aboveContent={true} />
         <ShowcaseGallery />
-        <MainContainerStyled className="p-standard">
+        <ShowcasePointsTrapezoid />
+        <ShowcasePointsTrapezoid />
+        <ShowcasePointsTrapezoid />
+        <ContactForm />
+        {/* <MainContainerStyled className="p-standard">
           <div>
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -236,7 +244,7 @@ export function Index() {
               nibh.
             </div>
           </div>
-        </MainContainerStyled>
+        </MainContainerStyled> */}
         <Footer className="p-standard" />
       </LayoutContainerStyled>
     </>
