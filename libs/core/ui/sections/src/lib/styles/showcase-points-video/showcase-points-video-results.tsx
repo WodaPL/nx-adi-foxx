@@ -20,19 +20,3 @@ export const ResultsContainer = styled.div`
   flex-direction: row;
   column-gap: 1.75rem;
 `;
-
-export const ResultTypeContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  column-gap: 0.6rem;
-`;
-
-export const Icon = styled.img`
-  filter: invert(1);
-  height: 3rem;
-  object-fit: contain;
-`;
-
-export const Result = styled.span`
-  font-size: 2rem;
-`;

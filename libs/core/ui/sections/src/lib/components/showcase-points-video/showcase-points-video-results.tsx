@@ -3,10 +3,8 @@ import {
   Wrapper,
   Title,
   ResultsContainer,
-  ResultTypeContainer,
-  Icon,
-  Result,
 } from '../../styles/showcase-points-video/showcase-points-video-results';
+import ShowcasePointsVideoResultItem from './showcase-points-video-result-item';
 
 export const ShowcasePointsVideoResults = ({
   id,
@@ -19,20 +17,21 @@ export const ShowcasePointsVideoResults = ({
     {
       id: 'subscribers',
       iconUrl: 'images/common-icons/user-add.png',
-      result: '2000',
+      result: 2000,
     },
     {
       id: 'views',
       iconUrl: 'images/common-icons/view.png',
-      result: '2000',
+      result: 2000,
     },
   ];
 
   const results = resultsData.map((item) => (
-    <ResultTypeContainer key={item.id}>
-      <Icon src={item.iconUrl} />
-      <Result>{item.result}</Result>
-    </ResultTypeContainer>
+    <ShowcasePointsVideoResultItem
+      key={item.id}
+      iconUrl={item.iconUrl}
+      result={item.result}
+    />
   ));
 
   return (
