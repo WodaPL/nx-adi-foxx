@@ -8,7 +8,7 @@ import { Wrapper } from '../../styles/showcase-gallery/showcase-gallery';
 const itemsInfo: ShowcaseGalleryItemInfo[] = [
   {
     id: 'the-foxxes-music',
-    buttonUrl: '#more',
+    buttonUrl: '#foxx-gotuje',
     logoUrl: 'images/project-logos/the-foxxes-music-horizontal.png',
     backgroundUrl: 'images/project-backgrounds/the-foxxes-music.png',
     videoUrl: '/video/project-intros/the-foxxes-music.mp4',
@@ -18,7 +18,7 @@ const itemsInfo: ShowcaseGalleryItemInfo[] = [
   },
   {
     id: 'the-foxxes-music-2',
-    buttonUrl: '#more',
+    buttonUrl: '#alkoholove-101',
     logoUrl: 'images/project-logos/the-foxxes-music-horizontal.png',
     backgroundUrl: 'images/project-backgrounds/the-foxxes-music.png',
     videoUrl: '/video/project-intros/the-foxxes-music.mp4',
@@ -28,7 +28,7 @@ const itemsInfo: ShowcaseGalleryItemInfo[] = [
   },
   {
     id: 'the-foxxes-music-3',
-    buttonUrl: '#more',
+    buttonUrl: '#the-foxxes-music',
     logoUrl: 'images/project-logos/the-foxxes-music-horizontal.png',
     backgroundUrl: 'images/project-backgrounds/the-foxxes-music.png',
     videoUrl: '/video/project-intros/the-foxxes-music.mp4',
