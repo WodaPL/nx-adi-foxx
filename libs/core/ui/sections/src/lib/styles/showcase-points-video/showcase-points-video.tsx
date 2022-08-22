@@ -34,14 +34,10 @@ export const Subtitle = styled.h3`
   color: white;
 `;
 
-export const BackgroundWrapper = styled.div`
+export const BackgroundVideo = styled.video`
   position: absolute;
   z-index: -50;
-  width: 100%;
-  height: 100%;
-`;
 
-export const Background = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;

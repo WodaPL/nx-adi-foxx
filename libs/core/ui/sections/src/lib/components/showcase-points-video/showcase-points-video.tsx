@@ -3,8 +3,7 @@ import {
   ContextContainer,
   Logo,
   Subtitle,
-  BackgroundWrapper,
-  Background,
+  BackgroundVideo,
 } from '../../styles/showcase-points-video/showcase-points-video';
 
 import ShowcasePointsVideoPoints from './showcase-points-video-points';
@@ -12,8 +11,7 @@ import ShowcasePointsVideoResults from './showcase-points-video-results';
 import ShowcasePointsVideoSocialLinks from './showcase-points-video-social-links';
 
 const logoUrl = 'images/project-logos/foxx-gotuje-horizontal.png';
-const backgroundUrl =
-  'images/project-backgrounds/foxx-gotuje-points-background.png';
+const backgroundVideoUrl = 'video/project-video-backgrounds/foxx-gotuje.mp4';
 
 export const ShowcasePointsVideo = ({
   id,
@@ -31,9 +29,7 @@ export const ShowcasePointsVideo = ({
         <ShowcasePointsVideoResults />
         <ShowcasePointsVideoSocialLinks />
       </ContextContainer>
-      <BackgroundWrapper>
-        <Background src={backgroundUrl}></Background>
-      </BackgroundWrapper>
+      <BackgroundVideo src={backgroundVideoUrl} muted autoPlay />
     </Wrapper>
   );
 };
